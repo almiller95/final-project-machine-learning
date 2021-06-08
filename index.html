@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cancer Prediction</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="readable/readable.css">
+  <link rel="stylesheet" href="../static/alec/css/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1>Breast Cancer Analysis</h1>
+        <h3>Use the interactive charts below to explore the model and dataset</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5">
+        <div id="chart"></div>
+      </div>
+      <div class="col-md-5">
+      </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-10">
+        <strong><h1>Background</h1></strong> 
+        <p>Breast cancer is the most common cancer in American women, outside of skin cancer. It is also the second leading cause of cancer death in women. Early detection can help save more American women lives.
+          The following model predicts whether a tumor is benign or malignate using a sample of data from Kaggle.
+        </p>
+      </div>
+      <div class="col-md-1">
+ 
+      </div>
+    </div>
+  
+    <div class = "row">
+      <div class="col-md-1">
+      </div>
+      <div class="col-md-10">
+        <strong><h1>Data Exploration</h1></strong>
+          <h2>Plots</h2>
+            <p>Click on each button below to view plots</p>
+              <a class="btn btn-primary" href="/bubble_map" role="button">Text</a>
+              <a class="btn btn-primary" href="/choropleth_map" role="button">Text</a>
+              <a class="btn btn-primary" href="/heatmap" role="button">Text</a>
+              <a class="btn btn-primary" href="/LargestFiresMap" role="button">Text</a>
+          <h2>Header</h2>
+            <p>Paragraph</p>
+              <div id="bar_graph"></div>
+          <h2>Images of Plots </h2>
+              <img src="../static/celine/Images/Alaska.png" alt="Alaska" width="45%" height="auto">
+              <img src="../static/celine/Images/California.png" alt="California" width="45%" height="auto">
+              <img src="../static/celine/Images/Florida.png" alt="Florida" width="45%" height="auto">
+              <img src="../static/celine/Images/Georgia.png" alt="Georgia" width="45%" height="auto">
+              <img src="../static/celine/Images/North Carolina.png" alt="North Carolina" width="45%" height="auto">
+              <img src="../static/celine/Images/Texas.png" alt="Texas" width="45%" height="auto">
+      </div>
+      <div class="col-md-1">
+        <!-- insert image here -->
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <!-- start of Alec  -->
+  <div class="container">
+  <h2>Model</h2>
+  <br>
+    <div class="container-fluid"></div>
+      <div class ="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
+    </div>
+
+      <!-- adding in dropdown menu to select each state -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="well">
+          </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
+        </div>      
+      </div>
+  
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well">
+          </div>
+        </div>
+      </div>
+  
+      <div class ="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+        </div>
+      </div>
+  
+      <div class="row" >
+        <div class="col-md-2"></div>
+        <div class="col-md-8"></div>
+
+  <div class="container">
+  <h2>Title Placeholder</h2>
+  <br>
+      <div class="row">
+        <div class="col-md-5">
+          <h2>Header Placeholder</h2>
+         <p>Placeholder</p>
+        </div>
+        <div class="col-md-5">
+          <h2>Headerplaceholder</h2>
+          <p>Hover over each slice for fire count.</p>
+        </div>
+      </div>
+    </div>   
+    <div class=row></div>
+</div>
+
+  
+  <div id='footer'>
+    <p>&copy; 2021 Alec Miller, Collin Page, Haley Peterson, & Julie Wells</p>
+  </div>
+  
+    <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script type="text/javascript" src="../static/celine/js/app1.js"></script>
+  <script src="{{ url_for('static', filename='alec/js/config.js') }}"></script>
+  <script src="{{ url_for('static', filename='alec/js/app.js') }}"></script>
+  <script src="{{ url_for('static', filename='julie/app.js') }}"></script>
+  <script type="text/javascript" src="readable/readable-vanilla.js"></script>
+  
+</body>
+
+</html>
