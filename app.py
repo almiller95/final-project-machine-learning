@@ -71,9 +71,13 @@ class Data(db.Model):
 @app.route("/data")
 def data():
 
-    results = db.session.query(Data.overall_rank, Data.country_or_region, Data.happiness_score, 
-    Data.gdp_per_capita, Data.social_support, Data.life_expectancy, Data.freedom, Data.generosity, 
-    Data.perception_of_government_corruption, Data.year).all()
+    results = db.session.query(Data.id, Data.diagnosis, Data.radius_mean, Data.texture_mean, Data.perimeter_mean, Data.area_mean,
+    Data.smoothness_mean, Data.compactness_mean, Data.concavity_mean, Data.concave_points_mean, Data.symmetry_mean,
+    Data.fractal_dimension_mean, Data.radius_se, Data.texture_se, Data.perimeter_se, Data.area_se,
+    Data.smoothness_se, Data.compactness_se, Data.concavity_se, Data.concave_points_se, Data.symmetry_se,
+    Data.fractal_dimension_se, Data.radius_worst, Data.texture_worst, Data.perimeter_worst, Data.area_worst,
+    Data.smoothness_worst, Data.compactness_worst, Data.concavity_worst, Data.concave_points_worst, Data.symmetry_worst,
+    Data.fractal_dimension_worst).all()
 
     print(results[0])
 
