@@ -1,7 +1,9 @@
 body {
     padding: 25;
     margin: 25;
-    font-family: 'verdana', sans-serif
+    font-family: 'verdana', sans-serif;
+    background-image: url('breast-cancer-ribbon-small.jpg');
+    background-repeat: repeat;
 }
   
 #map,
@@ -19,6 +21,14 @@ h2 {
     color: RGB(147,37,68);
     font-style: italic;
 
+}
+
+.container {
+    background-color: rgba(255, 213, 252, 0.775);
+    border-radius: 25px;
+    border: 2px solid rgb(126,136,151);
+    padding: 20px;
+    fill-opacity: 0.4;
 }
 
 .btn-primary {
