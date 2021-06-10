@@ -1,0 +1,46 @@
+body {
+    padding: 25;
+    margin: 25;
+    font-family: 'verdana', sans-serif
+}
+  
+#map,
+body,
+html {
+    height: 100%;
+}
+
+h1 {
+    color:RGB(137,33,94);
+    font-family: 'verdana', sans-serif
+}
+
+h2 {
+    color: RGB(147,37,68);
+    font-style: italic;
+
+}
+
+.btn-primary {
+    background-color: RGB(203,146,194);
+    color: white;
+    border-color: white;
+}
+
+.btn-primary:hover {
+    background-color:
+    RGB(203,146,194);
+    color: white;
+    border-color: white;
+}
+
+.btn-primary :active {
+    background-color: darkgray;
+    color: white;
+    border-color: white;
+}
+h3 { color: gray;
+    font-size: large;
+    font-style: italic;
+
+}
