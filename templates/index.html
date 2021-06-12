@@ -23,10 +23,8 @@
                 Views
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="/happiness_by_country">'text</a>
-                <a class="dropdown-item" href="/the_last_5_years">'text'</a>
-                <a class="dropdown-item" href="/data">'text</a>
-                <a class="dropdown-item" href="/drews_page">'text'</a>
+                <a class="dropdown-item" href="https://colab.research.google.com/drive/1NJY37f-RJuDfQUH5MGMhwVfbM_Owqy7G?usp=sharing">ML Code</a>
+                <a class="dropdown-item" href="/data">Data Table</a>
               </div>
             </div>
       </li>
@@ -62,7 +60,7 @@
     <div class="row">
       <div class="col-md-1">
       </div>
-      <div class="col-md-10">
+      <div class="col-md-10 text-center">
         <strong><h1>Background</h1></strong> 
         <p>Breast cancer is the most common cancer in American women, outside of skin cancer. It is also the second leading cause of cancer death in women. Early detection can help save more American women lives.
           The following model predicts whether a tumor is benign or malignate using a sample of data from Kaggle.
@@ -72,20 +70,23 @@
  
       </div>
     </div>
-  
+  </div>
+  <br>
+  <div class="container">
     <div class = "row">
       <div class="col-md-1">
       </div>
-      <div class="col-md-10">
-        <strong><h1>Data Exploration</h1></strong>
+      <div class="col-md-16">
+        <strong><h1><b>Data Exploration</b></h1></strong>
+        <h2>Heres What We Did</h2>
+            <p>Paragraph</p>
           <h2>Visualization</h2>
-            <p>Click on the Button below to go to the Tableau!</p>
+            <p>Scroll down to play with our Tableau, or if you prefer, click on the Button below!</p>
               <a class="btn btn-primary" href="https://public.tableau.com/app/profile/julie.wells/viz/BreastCancerAnalysis_16231196548460/FinalProject" role="button"><b>LETS GO!!!</b></a>
               
-          <h2>Header</h2>
-            <p>Paragraph</p>
+          
               <div id="bar_graph"></div>
-          <h2>Images of Plots </h2>
+          <h2><b>Model</b></h2>
           <div class='tableauPlaceholder' id='viz1623288869473' style='position: relative'><noscript>
             <a href='#'><img alt='Final Project ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSCFNCR5W&#47;1_rss.png' style='border: none' /></a></noscript>
             <object class='tableauViz'  style='display:none;'>
@@ -104,16 +105,16 @@
               vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
       </div>
       <div class="col-md-1">
-        <!-- insert image here -->
+      
       </div>
     </div>
   </div>
   <br>
 
 
-  <!-- start of Alec  -->
+  <!-- images Container  -->
   <div class="container">
-  <h2>Model</h2>
+  <h2><b>Images</b></h2>
   <br>
     <div class="container-fluid"></div>
       <div class ="row">
@@ -124,52 +125,14 @@
       </div>
     </div>
 
-      <!-- adding in dropdown menu to select each state -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="well">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="well">
-          </div>
-        </div>
-      </div>
-    
-      <div class="row">
-        <div class="col-md-6">
-        </div>
-        <div class="col-md-6">
-        </div>      
-      </div>
-  
-      <div class="row">
-        <div class="col-md-4">
-          <div class="well">
-          </div>
-        </div>
-      </div>
-  
-      <div class ="row">
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-        </div>
-      </div>
-  
-      <div class="row" >
-        <div class="col-md-2"></div>
-        <div class="col-md-8"></div>
+  <br>
 
   <div class="container">
-  <h2>Title Placeholder</h2>
+  <h2><b>Summmary</b></h2>
   <br>
       <div class="row">
         <div class="col-md-5">
-          <h2>Header Placeholder</h2>
+          <h2></h2>
          <p>Placeholder</p>
         </div>
         <div class="col-md-5">
@@ -178,24 +141,10 @@
       </div>
     </div>   
     <div class=row></div>
+  <br>
 </div>
 
   
-  <div id='footer'>
-    <p>&copy; 2021 Alec Miller, Collin Page, Haley Peterson, & Julie Wells</p>
-  </div>
-  
-    <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script type="text/javascript" src="../static/celine/js/app1.js"></script>
-  <script src="{{ url_for('static', filename='alec/js/config.js') }}"></script>
-  <script src="{{ url_for('static', filename='alec/js/app.js') }}"></script>
-  <script src="{{ url_for('static', filename='julie/app.js') }}"></script>
-  <script type="text/javascript" src="readable/readable-vanilla.js"></script>
   
 </body>
 
