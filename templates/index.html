@@ -2,22 +2,44 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cancer Prediction</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="readable/readable.css">
-  <link rel="stylesheet" href="../static/alec/css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="../static/css/styles.css?q=1280549780" rel="stylesheet">
 
 </head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <a class="btn btn-primary" href="/" role="button">Homepage</a>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Views
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="/happiness_by_country">'text</a>
+                <a class="dropdown-item" href="/the_last_5_years">'text'</a>
+                <a class="dropdown-item" href="/data">'text</a>
+                <a class="dropdown-item" href="/drews_page">'text'</a>
+              </div>
+            </div>
+      </li>
+    </ul>
+  </div>
+</nav>
 
 <body>
 
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
-        <h1>Breast Cancer Analysis</h1>
+        <h1><b>Breast Cancer Analysis</b></h1>
         <h3>Use the interactive charts below to explore the model and dataset</h3>
       </div>
     </div>
@@ -56,22 +78,30 @@
       </div>
       <div class="col-md-10">
         <strong><h1>Data Exploration</h1></strong>
-          <h2>Plots</h2>
-            <p>Click on each button below to view plots</p>
-              <a class="btn btn-primary" href="/bubble_map" role="button">Text</a>
-              <a class="btn btn-primary" href="/choropleth_map" role="button">Text</a>
-              <a class="btn btn-primary" href="/heatmap" role="button">Text</a>
-              <a class="btn btn-primary" href="/LargestFiresMap" role="button">Text</a>
+          <h2>Visualization</h2>
+            <p>Click on the Button below to go to the Tableau!</p>
+              <a class="btn btn-primary" href="https://public.tableau.com/app/profile/julie.wells/viz/BreastCancerAnalysis_16231196548460/FinalProject" role="button"><b>LETS GO!!!</b></a>
+              
           <h2>Header</h2>
             <p>Paragraph</p>
               <div id="bar_graph"></div>
           <h2>Images of Plots </h2>
-              <img src="../static/celine/Images/Alaska.png" alt="Alaska" width="45%" height="auto">
-              <img src="../static/celine/Images/California.png" alt="California" width="45%" height="auto">
-              <img src="../static/celine/Images/Florida.png" alt="Florida" width="45%" height="auto">
-              <img src="../static/celine/Images/Georgia.png" alt="Georgia" width="45%" height="auto">
-              <img src="../static/celine/Images/North Carolina.png" alt="North Carolina" width="45%" height="auto">
-              <img src="../static/celine/Images/Texas.png" alt="Texas" width="45%" height="auto">
+          <div class='tableauPlaceholder' id='viz1623288869473' style='position: relative'><noscript>
+            <a href='#'><img alt='Final Project ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSCFNCR5W&#47;1_rss.png' style='border: none' /></a></noscript>
+            <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> 
+            <param name='path' value='shared&#47;CSCFNCR5W' /> <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSCFNCR5W&#47;1.png' /> 
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' /><param name='display_count' value='yes' />
+            <param name='language' value='en-US' /></object></div>'
+            <script type='text/javascript'>
+              var divElement = document.getElementById('viz1623288869473'); 
+              var vizElement = divElement.getElementsByTagName('object')[0];
+              vizElement.style.width='1016px';vizElement.style.height='991px';
+              var scriptElement = document.createElement('script');
+              scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+              vizElement.parentNode.insertBefore(scriptElement, vizElement); </script>
       </div>
       <div class="col-md-1">
         <!-- insert image here -->
@@ -143,8 +173,7 @@
          <p>Placeholder</p>
         </div>
         <div class="col-md-5">
-          <h2>Headerplaceholder</h2>
-          <p>Hover over each slice for fire count.</p>
+          
         </div>
       </div>
     </div>   
