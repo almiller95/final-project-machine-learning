@@ -59,7 +59,7 @@ h3 { color: gray;
     position:relative;
   }
   #table-scroll {
-    height:150px;
+    height:500px;
     overflow:auto;  
     margin-top:20px;
   }
@@ -68,7 +68,7 @@ h3 { color: gray;
   
   }
   #table-wrapper table * {
-    background:yellow;
+    background:white;
     color:black;
   }
   #table-wrapper table thead th .text {
@@ -78,4 +78,25 @@ h3 { color: gray;
     height:20px;
     width:35%;
     border:1px solid red;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
   }
