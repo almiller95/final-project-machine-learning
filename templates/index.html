@@ -24,6 +24,7 @@
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="https://colab.research.google.com/drive/1NJY37f-RJuDfQUH5MGMhwVfbM_Owqy7G?usp=sharing">ML Code</a>
+                <a class="dropdown-item" href="https://colab.research.google.com/drive/14VL1_5XwcGl_mk6V5w7R5uUUg2sQm3Yy?usp=sharing">ETL Code</a>
                 <a class="dropdown-item" href="/data">Data Table</a>
               </div>
             </div>
@@ -85,25 +86,14 @@
       </div>
       <div class="col-md-12">
         <strong><h1><b>Data Exploration</b></h1></strong>
-        <strong><h2>Here's What We Did</h2></strong>
         <br>
-        <strong><h3>Machine Learning</h3></strong>
-            <p>For this part of the project, I used a colab notebook to create a machine learning model that will predict if a tumor is benign or malignant based on it's attributes. The code for this can be seen here.
-              <br>
-              First, I did some basic data exploration in order to decide how to best implement the data into a model. I determined that there were three main categories, mean (mean of all cells), se (standard error of all cells), and worst (the worst cell). I decided to break the data into these categories and work with the mean category primarily. I also created a correlation graph in order to see which attributes of the mean subcategory were highly correlated in order to avoid using parameters that depended on one another. From this exploration, I determined that the best attributes to use would be perimeter_mean, texture_mean, compactness_mean, symmetry_mean, and smoothness_mean as these did not contain colinearity.
-              <br>
-              Next, I created a Machine Learning model on the above decsribed subgroup of the mean attributes. I split this data set into testing and training, and used a Random Forrest Classifier to predict the test data. I checked the accuracy of this model, and 91.8%. I then used the SVM model to compare accuracy and got an accuracy of 90.1%. I then decided that I wanted to compare this subgroup of the mean attributes to a model than included all of the mean attributes. When creating the same Machine Learning models, I discovered that using all mean attributes with a Random Forrest Classifier provided 100.0% accuracy, and SVM gave 91.8% accuracy. However, an accuracy of 100.0% is suspicious and is likely a result of using attributes that have multi colinearity. Thus, the model without it is probably a better model than when using all of the attributes.
-              <br>
-              Finally, I created a third Machine Learning model using the worst category of data. When using this set and all of its attributes, I got 95.9% accuracy using the Random Forrest Classifier and 94.2% accuracy using SVM.
-              
-              Next steps for these models would be predict the outcome of new tumor and then check the accuracy against whether that tumor was actually Malignant or Benign.</p>
           <h2>Visualization</h2>
             <p>Scroll down to play with our Tableau, or if you prefer, click on the Button below!</p>
               <a class="btn btn-primary" href="https://public.tableau.com/app/profile/julie.wells/viz/BreastCancerAnalysis_16231196548460/FinalProject" role="button"><b>LETS GO!!!</b></a>
               
-          
+            <br>
               <div id="bar_graph"></div>
-          <h2><b>Model</b></h2>
+          
           <div class='tableauPlaceholder' id='viz1623288869473' style='position: relative'><noscript>
             <a href='#'><img alt='Final Project ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;CS&#47;CSCFNCR5W&#47;1_rss.png' style='border: none' /></a></noscript>
             <object class='tableauViz'  style='display:none;'>
@@ -131,7 +121,40 @@
 
   <!-- images Container  -->
   <div class="container">
-  <h2><b>Images</b></h2>
+  <h2><b>Machine Learning</b></h2>
+  <strong><h3>Machine Learning</h3></strong>
+  <p>This project used a colab notebook to create a machine learning model that will predict if a tumor is benign or 
+    malignant based on it's attributes. The code for this can be seen in the ML Code Tab.
+    <br>
+    <br>
+    The basic data exploration was done in order to decide how to best implement the data into a model. 
+    It was determined that there were three main categories, mean (mean of all cells), 
+    se (standard error of all cells), and worst (the worst cell). Based on this, the data was broken into these 
+    categories and to work with the mean category primarily. A correlation graph was created in order to see which 
+    attributes of the mean subcategory were highly correlated in order to avoid using parameters that depended 
+    on one another. From this exploration, the best attributes were determined to be perimeter_mean, texture_mean, 
+    compactness_mean, symmetry_mean, and smoothness_mean as these did not contain colinearity.
+    <br>
+    <br>
+    Next, the Machine Learning model was created on the above decsribed subgroup of the mean attributes. 
+    This data was split into testing and training sets, and a Random Forrest Classifier was used to predict the test data. 
+    The accuracy of this model was checked and found to be 91.8%. The SVM model was then used to compare accuracy and this 
+    revealed an accuracy of 90.1%. This subgroup of the mean attributes was then compared to a model than included all of 
+    the mean attributes. Creating the same Machine Learning models, it was discovered that using all mean attributes with a 
+    Random Forrest Classifier provided 100.0% accuracy, and SVM gave 91.8% accuracy. However, an accuracy of 100.0% is 
+    suspicious and is likely a result of using attributes that have multi colinearity. Thus, the model without it is probably 
+    a better model than when using all of the attributes.
+    <br>
+    <br>
+    Finally, a third Machine Learning model was created using the worst category of data. When using this set and all of its attributes, 
+    an accuracy of 95.9% was found when using the Random Forrest Classifier and and accuracy of 94.2% using SVM.
+    <br>
+    <br>
+    Next steps for these models would be to predict the outcome of new tumor and then check the accuracy against whether that tumor was actually Malignant or Benign.
+    You can see some code snippets below.</p>
+<h2>Images</h2>
+
+
   <br>
     <div class="container-fluid"></div>
       <div class ="row">
@@ -155,20 +178,7 @@
 
   <br>
 
-  <div class="container">
-  <h2><b>Summmary</b></h2>
-  <br>
-      <div class="row">
-        <div class="col-md-5">
-          <h2></h2>
-         <p>Placeholder</p>
-        </div>
-        <div class="col-md-5">
-          
-        </div>
-      </div>
-    </div>   
-    <div class=row></div>
+  
   <br>
 </div>
 
