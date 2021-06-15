@@ -4,6 +4,7 @@
 This project analyzes [Breast Cancer Wisconsin (diagnostic) Data Set](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data) from Kaggle. First, this project utilized python pandas to clean the data. Then used postgres and AWS to host the cleaned data set. Next, it utilized python pandas, matplotlib, and sklearn to create a machine learning model that will predict if a tumor is benign or malignant based on it's attributes. Finally, this project used Tableau and a Flask app to visualize the findings. 
 
 ## ETL
+Raw data was orginally provided a csv file format via ftp - (ftp.cs.wisc.edu). Csv file was uploaded to AWS S3, and then extracted into a colab notebook using Spark. Leveraging Spark, the data was modified to drop off a null values and change column header names. Final data was then loaded into an AWS RDS database using a postgres application.
 
 ## Machine Learning
 This project used a colab notebook to create a machine learning model that will predict if a tumor is benign or malignant based on it's attributes. The code for this can be seen [here](MachineLearning.ipynb). 
