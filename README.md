@@ -17,6 +17,7 @@ Finally, a third Machine Learning model was created using the worst category of 
 Next steps for these models would be predict the outcome of new tumor and then check the accuracy against whether that tumor was actually Malignant or Benign.
 
 ## Data Analysis
+To include an interactive element for data exploration, a tableau story is embedded into the web app. This includes a few Tableau dashboards that give the viewer the opportunity to explore the data set themselves. The first dashboard is a summary of the dataset (number of records, tumor types, and attributes). It also includes a dynamic scatterplot that can filter based off of mean input and diagnosis. This can be utilitized to see correlation between specific inputs. The second dashboard is a correlation heatmap of all potential inputs for the model. The user can filter on tumor diagnosis and input category (mean, standard errror, and worst). The third dashboard is focused solely on the mean category and highlights the inputs selected for the machine learning model with mean variables. 
 
 ## Webpage
 
